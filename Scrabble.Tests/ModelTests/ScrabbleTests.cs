@@ -1,5 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using ToDoList.Models;
+using Scrabble.Models;
 
 namespace Scrabble.Tests
 {
@@ -7,7 +7,20 @@ namespace Scrabble.Tests
   public class ScrabbleTests
   {
 
-    // Test methods will go here.
+    [TestMethod]
+    public void ScrabbleConstructor_CreatesInstanceOfScrabble_Scrabble()
+    {
+      ScrabbleScore newWord = new ScrabbleScore("test");
+      Assert.AreEqual(typeof(ScrabbleScore), newWord.GetType());
+    }
 
+    [TestMethod]
+    public void GetWord_ReturnsWord_String()
+    {
+      string word = "scrabble";
+      ScrabbleScore newWord = new ScrabbleScore(word);
+      string result = newWord.Word;
+      Assert.AreEqual(word, result);
+    }
   }
 }
