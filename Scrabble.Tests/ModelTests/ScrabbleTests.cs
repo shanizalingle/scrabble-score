@@ -22,5 +22,20 @@ namespace Scrabble.Tests
       string result = newWord.Word;
       Assert.AreEqual(word, result);
     }
+
+    [TestMethod]
+    public void SetWord_ReturnsWord_String()
+    {
+      string word = "scrabble";
+      ScrabbleScore newWord = new ScrabbleScore(word);
+      string updatedWord = "Game";
+      newWord.Word = updatedWord;
+      string result = newWord.Word;
+      Assert.AreEqual(updatedWord, result);
+    }
+
+
+
+
   }
 }
