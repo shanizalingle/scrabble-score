@@ -1,12 +1,13 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Collections.Generic;
 using Scrabble.Models;
+using System;
 
 namespace Scrabble.Tests
 {
   [TestClass]
-  public class ScrabbleTests
+  public class ScrabbleTests 
   {
-
     [TestMethod]
     public void ScrabbleConstructor_CreatesInstanceOfScrabble_Scrabble()
     {
@@ -34,8 +35,11 @@ namespace Scrabble.Tests
       Assert.AreEqual(updatedWord, result);
     }
 
-
-
-
+    [TestMethod]
+    public void WordToArray_ReturnsPoints_Number()
+    {
+      ScrabbleScore testScrabbleScore = new ScrabbleScore("amar");
+      Assert.AreEqual( 6, testScrabbleScore.GetPoints());
+    }
   }
 }
