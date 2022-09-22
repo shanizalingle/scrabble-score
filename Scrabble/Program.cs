@@ -23,12 +23,14 @@ namespace Scrabble.Models
           ScrabbleScore newWord = new ScrabbleScore(userWord);
           Console.WriteLine("Here's your points:");
           Console.WriteLine(newWord.GetPoints());
+        }
 
-        } else if (userInput == "Q")
+        else if (userInput == "Q")
         {
           replay = false;
-
-        } else 
+        } 
+        
+        else 
         {
           Console.WriteLine("This is not a valid command, please try again");
         }
