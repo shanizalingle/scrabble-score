@@ -47,7 +47,7 @@ namespace Scrabble.Models
           points += 10;
 
         } else {
-          return points = 0;
+          points += 0;
         }
       }
       return points;
