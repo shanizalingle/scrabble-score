@@ -2,7 +2,7 @@
 
 #### By _**Harold Mesa, Shaniza Lingle**_
 
-#### _See your scrabble score_
+#### _Play Scrabble and see how many points you can get!_
 
 ## Technologies Used
 
@@ -13,7 +13,7 @@
 
 ## Description
 
-_Make a console application that takes a word and returns the Scrabble score for that word. Make sure to start with your specs, and that you include a README for this project and create a Git repository for it. Here are the values of letters in Scrabble:_
+_This is a console application that takes a word and returns the Scrabble score for that word. Here are the values of letters in Scrabble: A, E, I, O, U, L, N, R, S, T = 1 point, D, G = 2 points, B, C, M, P = 3 points, F, H, V, W, Y = 4 points, K = 5 points, J, X = 8 points, Q, Z = 10 points._
 
 ## Setup/Installation Requirements
 
